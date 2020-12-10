@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.msunsoft.spt.common.logging.starter.configure.SptLogAutoConfigure

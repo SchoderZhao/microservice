@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: FEBS-Server-Job
+  cloud:
+    nacos:
+      config:
+        server-addr: 10.67.78.55:8003
+        group: DEFAULT_GROUP
+        prefix: febs-server-job
+        file-extension: yaml
+      discovery:
+        server-addr: 10.67.78.55:8003
+
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          actuate:
+            endpoint:
+              EndpointId: error
+    com:
+      alibaba:
+        cloud:
+          nacos:
+            client:
+              NacosPropertySourceBuilder: error

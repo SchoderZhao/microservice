@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Spt-Admin
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.16.15.3:8001
+        group: DEFAULT_GROUP
+        prefix: spt-admin
+        file-extension: yaml
+
+logging:
+  level:
+    com:
+      alibaba:
+        cloud:
+          nacos:
+            client:
+              NacosPropertySourceBuilder: error

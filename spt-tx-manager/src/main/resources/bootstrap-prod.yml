@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Spt-TX-Manager
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.16.15.3:8001
+        group: DEFAULT_GROUP
+        prefix: spt-tx-manager
+        file-extension: yaml
+logging:
+  level:
+    com:
+      alibaba:
+        cloud:
+          nacos:
+            client:
+              NacosPropertySourceBuilder: error

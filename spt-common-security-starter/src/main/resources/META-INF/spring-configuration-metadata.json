@@ -1,0 +1,93 @@
+{
+  "groups": [
+    {
+      "name": "spt.doc",
+      "type": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spt.doc.base-package",
+      "type": "java.lang.String",
+      "description": "接口扫描路径，如Controller路径",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties"
+    },
+    {
+      "name": "spt.doc.description",
+      "type": "java.lang.String",
+      "description": "文档描述",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties"
+    },
+    {
+      "name": "spt.doc.description-color",
+      "type": "java.lang.String",
+      "description": "文档描述颜色",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties",
+      "defaultValue": "#42b983"
+    },
+    {
+      "name": "spt.doc.description-font-size",
+      "type": "java.lang.String",
+      "description": "文档描述字体大小",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties",
+      "defaultValue": "14"
+    },
+    {
+      "name": "spt.doc.email",
+      "type": "java.lang.String",
+      "description": "联系方式：邮箱",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties"
+    },
+    {
+      "name": "spt.doc.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否开启doc功能",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spt.doc.license",
+      "type": "java.lang.String",
+      "description": "协议",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties"
+    },
+    {
+      "name": "spt.doc.license-url",
+      "type": "java.lang.String",
+      "description": "协议地址",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties"
+    },
+    {
+      "name": "spt.doc.name",
+      "type": "java.lang.String",
+      "description": "联系方式：姓名",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties"
+    },
+    {
+      "name": "spt.doc.terms-of-service-url",
+      "type": "java.lang.String",
+      "description": "服务url",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties"
+    },
+    {
+      "name": "spt.doc.title",
+      "type": "java.lang.String",
+      "description": "文档标题",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties"
+    },
+    {
+      "name": "spt.doc.url",
+      "type": "java.lang.String",
+      "description": "联系方式：个人网站url",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties"
+    },
+    {
+      "name": "spt.doc.version",
+      "type": "java.lang.String",
+      "description": "版本",
+      "sourceType": "com.msunsoft.spt.common.doc.starter.properties.SptDocProperties"
+    }
+  ],
+  "hints": []
+}

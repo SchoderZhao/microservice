@@ -1,0 +1,17 @@
+package com.msunsoft.spt.gateway.common.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Mono;
+
+/**
+ * @author Schoder
+ */
+@RestController
+public class IndexController {
+
+    @RequestMapping("/")
+    public Mono<String> index() {
+        return Mono.just("spt cloud gateway");
+    }
+}

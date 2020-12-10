@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: spt-server-hncollection
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.16.15.3:8001
+        group: DEFAULT_GROUP
+        prefix: spt-server-hncollection
+        file-extension: yaml
+        refreshable-dataids:
+      discovery:
+        server-addr: 172.16.15.3:8001
+
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          actuate:
+            endpoint:
+              EndpointId: error
+    com:
+      alibaba:
+        cloud:
+          nacos:
+            client:
+              NacosPropertySourceBuilder: error

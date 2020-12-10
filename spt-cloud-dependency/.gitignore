@@ -1,0 +1,7 @@
+target/
+.idea/
+log/
+*.iml
+.txlcn/
+spy.log
+.DS_Store

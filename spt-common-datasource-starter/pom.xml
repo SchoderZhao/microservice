@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.msunsoft</groupId>
+        <artifactId>spt-cloud-dependency</artifactId>
+        <version>1.1-RELEASE</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <name>Spt-Common-DataSource-Starter</name>
+    <description>通用数据库模块</description>
+    <packaging>jar</packaging>
+    <artifactId>spt-common-datasource-starter</artifactId>
+
+    <properties>
+        <spt-cloud.version>1.1-RELEASE</spt-cloud.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.msunsoft</groupId>
+            <artifactId>spt-common-core</artifactId>
+            <version>${spt-cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+            <version>${dynamic-datasource.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>p6spy</groupId>
+            <artifactId>p6spy</artifactId>
+            <version>${p6spy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+</project>

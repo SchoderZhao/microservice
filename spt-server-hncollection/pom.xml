@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.msunsoft</groupId>
+        <artifactId>spt-cloud-dependency</artifactId>
+        <version>1.1-RELEASE</version>
+    </parent>
+
+    <artifactId>spt-server-hncollection</artifactId>
+    <name>Spt-Server-HnCollection</name>
+    <description>Spt-Server-HnCollection微服务河南采集模块</description>
+
+    <properties>
+        <spt-cloud.version>1.1-RELEASE</spt-cloud.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>${logstash-logback-encoder.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.msunsoft</groupId>
+            <artifactId>spt-common-datasource-starter</artifactId>
+            <version>${spt-cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.msunsoft</groupId>
+            <artifactId>spt-common-security-starter</artifactId>
+            <version>${spt-cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.msunsoft</groupId>
+            <artifactId>spt-common-doc-starter</artifactId>
+            <version>${spt-cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.msunsoft</groupId>
+            <artifactId>spt-common-logging-starter</artifactId>
+            <version>${spt-cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codingapi.txlcn</groupId>
+            <artifactId>txlcn-tc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.codingapi.txlcn</groupId>
+            <artifactId>txlcn-txmsg-netty</artifactId>
+        </dependency>
+        <!-- oracle driver -->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.1.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

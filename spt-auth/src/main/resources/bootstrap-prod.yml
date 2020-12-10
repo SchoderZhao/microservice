@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: Spt-Auth
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.16.15.3:8001
+        group: DEFAULT_GROUP
+        prefix: spt-auth
+        file-extension: yaml
+      discovery:
+        server-addr: 172.16.15.3:8001
+  thymeleaf:
+    cache: false
+
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          actuate:
+            endpoint:
+              EndpointId: error
+    com:
+      alibaba:
+        cloud:
+          nacos:
+            client:
+              NacosPropertySourceBuilder: error

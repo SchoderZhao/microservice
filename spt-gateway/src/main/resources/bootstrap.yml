@@ -1,0 +1,37 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: Spt-Gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: 10.67.78.55:8003
+        group: DEFAULT_GROUP
+        prefix: spt-gateway
+        file-extension: yaml
+      discovery:
+        server-addr: 10.67.78.55:8003
+  boot:
+    admin:
+      client:
+        instance:
+          prefer-ip: true
+
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          actuate:
+            endpoint:
+              EndpointId: error
+        data:
+          convert:
+            CustomConversions: error
+    com:
+      alibaba:
+        cloud:
+          nacos:
+            client:
+              NacosPropertySourceBuilder: error
